@@ -89,5 +89,14 @@ Macro/~*
 Macro/user_settings.ini
 Macro/local_config.*
 
+# VBA Macro Files with Sensitive Information
+Macro/SaveAttachmentsBySubject.bas
+
+# Security Documentation (contains vulnerability details)
+Macro/SECURITY_SANITIZATION.md
+
+# Security Log Files
+Macro/Logs/SecurityLog.txt
+
 # Misc
 New folder/
