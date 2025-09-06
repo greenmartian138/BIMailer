@@ -1,0 +1,23 @@
+Subject,MatchType,DestinationFolder,BackupFolder,DestinationFileName
+# Configuration Template for Outlook Attachment Macro
+# Copy this file to 'subject_config.csv' and customize with your settings
+# Remove the # comments and add your actual configuration rows
+#
+# MatchType Options:
+#   EXACT       - Email subject must match exactly (case-insensitive)
+#   CONTAINS    - Email subject must contain the specified text
+#   STARTS_WITH - Email subject must start with the specified text
+#   ENDS_WITH   - Email subject must end with the specified text
+#
+# Special placeholders for DestinationFileName:
+#   {timestamp} - Current timestamp (YYYYMMDD_HHMMSS)
+#   {date}      - Current date (YYYYMMDD)
+#   {time}      - Current time (HHMMSS)
+#
+# Example configurations (remove # to activate):
+# Daily Sales Report,EXACT,C:\Reports\Sales\,C:\Backup\Sales\,daily_sales_{date}.xlsx
+# Weekly Inventory,CONTAINS,C:\Reports\Inventory\,C:\Backup\Inventory\,weekly_inventory_{timestamp}.pdf
+# RE:,STARTS_WITH,C:\Reports\Replies\,C:\Backup\Replies\,reply_{timestamp}.msg
+# Summary,ENDS_WITH,C:\Reports\Summaries\,C:\Backup\Summaries\,summary_{date}.xlsx
+# Monthly Financial Summary,EXACT,C:\Reports\Finance\,C:\Backup\Finance\,monthly_summary.xlsx
+# FW: Important Update,CONTAINS,C:\Reports\Updates\,C:\Backup\Updates\,update_{timestamp}.pdf

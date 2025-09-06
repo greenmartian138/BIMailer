@@ -83,6 +83,11 @@
 - **Scripts/main.py**: Main system execution
 - **Scripts/main_basic.py**: Basic version without external packages
 
+#### Outlook Macro Integration
+- **Macro/SaveAttachmentsBySubject.bas**: VBA macro for automated attachment saving
+- **Macro/subject_config.csv**: Configuration for email subject matching
+- **Macro/Logs/AttachmentLog.txt**: Detailed macro operation logs
+
 #### Test Commands
 ```bash
 # Run main system (production ready)

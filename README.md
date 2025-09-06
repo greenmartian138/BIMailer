@@ -47,6 +47,11 @@ BIMailer/
 │   ├── file_manager.py            # File operations and archiving
 │   ├── config_manager.py          # Configuration handling
 │   └── utils.py                   # Utility functions
+├── Macro/                         # Outlook VBA Macro for attachment saving
+│   ├── README.md                  # Macro documentation
+│   ├── SaveAttachmentsBySubject.bas # VBA macro file
+│   ├── subject_config.csv.template # Configuration template
+│   └── .gitignore                 # Macro-specific ignore rules
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This file
 └── bimailer_project_plan.md       # Detailed project specifications
@@ -326,6 +331,41 @@ The system maintains comprehensive logs:
 - **Disk Space**: Archives grow over time (configure retention policy)
 - **Concurrent Processing**: Prevented by lock mechanism
 
+## Outlook Macro Integration
+
+The BIMailer project includes an advanced Outlook VBA macro for automated attachment saving based on email subjects. This complements the main BIMailer system by providing intelligent email processing capabilities.
+
+### Features
+
+- **Subject-Based Matching**: Automatically save attachments based on email subject patterns
+- **Flexible Matching Types**: EXACT, CONTAINS, STARTS_WITH, ENDS_WITH matching options
+- **Dual-Folder Saving**: Save to both primary destination and backup folders
+- **Configurable File Naming**: Support for timestamp placeholders in filenames
+- **Comprehensive Logging**: Detailed operation logs with recipient tracking
+- **CSV-Driven Configuration**: Easy maintenance without code changes
+- **Git-Safe**: Configuration files ignored, only templates committed
+- **Robust Error Handling**: Fixed path resolution and filename logic issues
+- **Enhanced Debugging**: Detailed logging for troubleshooting attachment processing
+
+### Quick Start
+
+1. **Navigate to the Macro folder**: `cd Macro/`
+2. **Copy configuration template**: `copy subject_config.csv.template subject_config.csv`
+3. **Edit configuration** with your email subjects and destination folders
+4. **Import VBA macro** into Outlook (see `Macro/README.md` for detailed instructions)
+5. **Set up Outlook rule** to trigger the macro on incoming emails
+
+### Example Configuration
+
+```csv
+Subject,MatchType,DestinationFolder,BackupFolder,DestinationFileName
+Daily Sales Report,EXACT,C:\Reports\Sales\,C:\Backup\Sales\,daily_sales_{date}.xlsx
+Weekly Inventory,CONTAINS,C:\Reports\Inventory\,C:\Backup\Inventory\,inventory_{timestamp}.pdf
+RE:,STARTS_WITH,C:\Reports\Replies\,C:\Backup\Replies\,reply_{timestamp}.msg
+```
+
+For complete setup instructions, configuration options, and troubleshooting, see the dedicated documentation in `Macro/README.md`.
+
 ## Support
 
 For issues or questions:
@@ -333,6 +373,7 @@ For issues or questions:
 2. Run diagnostics: `python main.py diagnostics`
 3. Review configuration files for errors
 4. Check the project plan: `bimailer_project_plan.md`
+5. For Macro issues: See `Macro/README.md` for detailed troubleshooting
 
 ## License
 

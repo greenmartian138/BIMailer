@@ -72,5 +72,22 @@ test_smtp_simple.py
 *.pdf
 *.json
 
+# Macro Folder Configuration Files
+Macro/subject_config.csv
+
+# Macro Folder Log Files
+Macro/Logs/
+Macro/*.log
+Macro/*.txt
+
+# Macro Folder Backup and Temporary Files
+Macro/*.bak
+Macro/*.tmp
+Macro/~*
+
+# Macro Folder User-Specific Settings
+Macro/user_settings.ini
+Macro/local_config.*
+
 # Misc
 New folder/
