@@ -1,0 +1,3 @@
+Requirement already satisfied: reportlab in c:\users\hcvdb\venv\lib\site-packages (4.4.3)
+Requirement already satisfied: pillow>=9.0.0 in c:\users\hcvdb\venv\lib\site-packages (from reportlab) (11.3.0)
+Requirement already satisfied: charset-normalizer in c:\users\hcvdb\venv\lib\site-packages (from reportlab) (3.4.3)

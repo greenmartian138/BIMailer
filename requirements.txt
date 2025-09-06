@@ -1,0 +1,21 @@
+# BIMailer Automation System - Python Dependencies
+
+# Image processing and PDF generation
+Pillow>=9.0.0
+reportlab>=3.6.0
+
+# Data handling
+pandas>=1.3.0
+
+# Email functionality (built-in modules used: smtplib, email)
+# File operations (built-in modules used: pathlib, shutil, os)
+# Configuration (built-in modules used: configparser)
+# Logging (built-in modules used: logging)
+# Date/time (built-in modules used: datetime)
+# JSON handling (built-in modules used: json)
+# Regular expressions (built-in modules used: re)
+# URL encoding (built-in modules used: urllib.parse)
+# Web browser (built-in modules used: webbrowser)
+
+# Optional: For enhanced functionality
+# openpyxl>=3.0.0  # If Excel support is needed for configuration files

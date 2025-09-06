@@ -1,0 +1,76 @@
+# Sensitive Configuration Files
+Config/settings.ini
+Config/mailing_list.csv
+
+# Runtime Data Directories
+Logs/
+Archive/
+Output/
+Input/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Test Files with Credentials
+test_email_auth.py
+test_email_multiple_configs.py
+test_smtp_simple.py
+
+# Lock Files
+.lock
+
+# Generated PDFs and Metadata
+*.pdf
+*.json
+
+# Misc
+New folder/

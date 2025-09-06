@@ -1,0 +1,5 @@
+PDFName,Recipients,CC,Subject
+Weekly Sales Report,recipient1@company.com,manager@company.com,Weekly Sales Report - [DATE]
+Weekly Sales Report,recipient2@company.com,manager@company.com,Weekly Sales Report for Review - [DATE]
+Marketing Dashboard,marketing@company.com,cmo@company.com,Latest Marketing Dashboard - [DATE]
+Financial Summary,finance@company.com,cfo@company.com,Financial Summary Report - [DATE]

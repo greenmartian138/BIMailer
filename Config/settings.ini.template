@@ -1,0 +1,30 @@
+[General]
+log_retention_days = 60
+max_attachment_size_mb = 20
+processing_lock_timeout_minutes = 30
+
+[Email]
+use_default_mailer = False
+smtp_server = smtp.gmail.com
+smtp_port = 587
+smtp_username = your-email@gmail.com
+smtp_password = your-gmail-app-password
+use_tls = True
+use_ssl = False
+
+# Additional ports for testing
+smtp_port_alt1 = 25
+smtp_port_alt2 = 587
+# Test combinations will be handled by test script
+
+[Admin]
+admin_emails = admin@yourcompany.com
+send_summary_email = True
+send_error_notifications = True
+
+[Processing]
+png_file_extensions = .png,.PNG
+archive_after_processing = True
+override_existing_lock = False
+date_format = %%Y-%%m-%%d
+timestamp_format = %%Y-%%m-%%d_%%H-%%M-%%S
